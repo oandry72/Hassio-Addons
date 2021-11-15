@@ -1,1 +1,1 @@
-# OwnTone hass.io add-on
+# Andrei's Home Assistant Add-on: OwnTone
