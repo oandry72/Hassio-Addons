@@ -21,10 +21,6 @@
     "count": 1.2,
     "bitrate": 160,
     "random": ["haha", "hihi", "huhu", "hghg"],
-    "logins": [
-      { "username": "beer", "password": "123456" },
-      { "username": "cheep", "password": "654321" }
-    ],
     "general": [
       "uid": "root",
       "db_path": "/config/cache/songs3.db"
@@ -38,9 +34,6 @@
     "count": "float",
     "bitrate": "list(96|160|320)"
     "random": ["match(^\\w*$)"],
-    "logins": [
-      { "username": "str", "password": "str" }
-    ],
     "general": [
       "uid": "str",
       "db_path": "str",
