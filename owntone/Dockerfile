@@ -5,6 +5,7 @@ ENV LANG C.UTF-8
 
 ARG DAAPD_RELEASE
 ARG LIBSPOTIFY_VERSION
+ARG LIBANTLR_BUILD_OPT
 ARG BUILD_ARCH
 
 RUN \
@@ -64,7 +65,7 @@ RUN \
 	https://github.com/antlr/website-antlr3/raw/gh-pages/download/C/libantlr3c-3.4.tar.gz && \
  tar xf /tmp/libantlr3c-3.4.tar.gz  -C /tmp && \
  cd /tmp/libantlr3c-3.4 && \
- ./configure --prefix=/usr && \
+ ./configure ${LIBANTLR_BUILD_OPT} --prefix=/usr && \
  make && \
  make DESTDIR=/tmp/antlr3c-build install && \
  export LDFLAGS="-L/tmp/antlr3c-build/usr/lib" && \

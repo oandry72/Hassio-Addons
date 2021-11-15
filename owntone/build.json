@@ -3,6 +3,7 @@
     "armv7": "ghcr.io/hassio-addons/base/armv7:stable"
   },
   "args": {
-    "LIBSPOTIFY_VERSION": "12.1.51"
+    "LIBSPOTIFY_VERSION": "12.1.51",
+    "LIBANTLR_BUILD_OPT": "--build arm-unknown-linux-gnueabihf --disable-abiflags --disable-antlrdebug"
   }
 }
