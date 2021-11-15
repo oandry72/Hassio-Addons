@@ -1,6 +1,6 @@
 {
   "build_from": {
-    "armv7": "ghcr.io/hassio-addons/base/armv7:latest"
+    "armv7": "ghcr.io/hassio-addons/base/armv7:10.2.3"
   },
   "args": {
     "LIBSPOTIFY_VERSION": "12.1.51"
