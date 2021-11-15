@@ -20,11 +20,9 @@
     "size": 15,
     "count": 1.2,
     "bitrate": 160,
-
-      "uid": "root",
-      "db_path": "/data/cache/songs3.db",
-      "log_level": "error"
-
+    "uid": "root",
+    "db_path": "/data/cache/songs3.db",
+    "log_level": "error"
   },
   "schema": {
     "beer": "bool",
@@ -33,10 +31,8 @@
     "size": "int(5,20)",
     "count": "float",
     "bitrate": "list(96|160|320)",
-
-      "uid": "str",
-      "db_path": "str",
-      "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
-
+    "uid": "str",
+    "db_path": "str",
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
   }
 }
