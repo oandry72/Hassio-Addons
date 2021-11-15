@@ -11,5 +11,4 @@ RUN \
  echo "BUILD_ARCH=${BUILD_ARCH}" >> /tmp/echo_log && \
  echo "LIBSPOTIFY_VERSION=${LIBSPOTIFY_VERSION}" >> /tmp/echo_log
 
-RUN apk add --no-cache \
-  alsa-plugins-pulse
+RUN apk update
