@@ -75,7 +75,7 @@ RUN \
 	DAAPD_RELEASE=$(curl -sX GET "https://api.github.com/repos/owntone/owntone-server/releases/latest" \
 	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
  fi && \
- curl -L https://github.com/mopidy/libspotify-archive/blob/master/libspotify-${LIBSPOTIFY_VERSION}-Linux-${ARCH}-release.tar.gz?raw=true | tar -xzf- -C /tmp/source/ && \
+ curl -L https://github.com/mopidy/libspotify-archive/blob/master/libspotify-${LIBSPOTIFY_VERSION}-Linux-${BUILD_ARCH}-release.tar.gz?raw=true | tar -xzf- -C /tmp/source/ && \
  mv /tmp/source/libspotify* /tmp/source/libspotify && \
  sed -i 's/ldconfig//' /tmp/source/libspotify/Makefile && \
  make -C /tmp/source/libspotify prefix=/tmp/libspotify-build install && \
