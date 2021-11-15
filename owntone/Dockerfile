@@ -6,6 +6,6 @@ ARG LIBSPOTIFY_VERSION
 ARG BUILD_ARCH
 
 RUN \
- echo "**** install build packages ****" && \
- echo "BUILD_FROM=${BUILD_FROM}" && \
- echo "BUILD_ARCH=${BUILD_ARCH}"
+ echo "**** install build packages ****" > /tmp/echo_log && \
+ echo "BUILD_FROM=${BUILD_FROM}" >> /tmp/echo_log && \
+ echo "BUILD_ARCH=${BUILD_ARCH}" >> /tmp/echo_log
