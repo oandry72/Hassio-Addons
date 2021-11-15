@@ -1,6 +1,6 @@
 {
   "name": "OwnTone",
-  "version": "28.2.0",
+  "version": "0.0.1",
   "slug": "owntone",
   "description": "OwnTone media server instance",
   "url": "https://github.com/oandry72/Hassio-Addons/tree/main/owntone",
@@ -8,13 +8,11 @@
   "host_network": true,
   "host_dbus": true,
   "audio": true,
-  "arch": [
-    "armv7"
-  ],
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "boot": "auto",
   "hassio_api": true,
   "hassio_role": "default",
-  "map": [ 
+  "map": [
     "config:rw"
   ],
   "options": {
