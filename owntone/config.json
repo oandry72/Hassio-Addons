@@ -2,7 +2,7 @@
   "name": "OwnTone",
   "version": "0.0.2",
   "slug": "owntone",
-  "description": "OwnTone media server instance",
+  "description": "OwnTone is forked-daapd's new name. Linux/FreeBSD DAAP (iTunes) and MPD media server with support for AirPlay devices (multiroom), Apple Remote (and compatibles), Chromecast, Spotify and internet radio.",
   "url": "https://github.com/oandry72/Hassio-Addons/tree/main/owntone",
   "startup": "services",
   "host_network": true,
@@ -11,21 +11,29 @@
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "boot": "auto",
   "map": [
-    "config:rw",
     "media:rw"
   ],
   "options": {
     "beer": true,
-    "wine": true,
-    "liquor": false,
     "name": "world",
-    "year": 2017
+    "year": 2017,
+    "size": 15,
+    "count": 1.2,
+    "random": ["haha", "hihi", "huhu", "hghg"],
+    "logins": [
+      { "username": "beer", "password": "123456" },
+      { "username": "cheep", "password": "654321" }
+    ]
   },
   "schema": {
     "beer": "bool",
-    "wine": "bool",
-    "liquor": "bool",
     "name": "str",
-    "year": "int"
+    "year": "int",
+    "size": "int(5,20)",
+    "count": "float",
+    "random": ["match(^\\w*$)"],
+    "logins": [
+      { "username": "str", "password": "str" }
+    ]
   }
 }

@@ -13,4 +13,10 @@ RUN \
  echo "BUILD_ARCH=${BUILD_ARCH}" >> /tmp/echo_log && \
  echo "LIBSPOTIFY_VERSION=${LIBSPOTIFY_VERSION}" >> /tmp/echo_log
 
-RUN apk update
+RUN apk add --no-cache \
+  alsa-plugins-pulse
+
+
+# Labels
+LABEL \
+  maintainer="Andrei Osokin <oandry72@gmail.com>"
