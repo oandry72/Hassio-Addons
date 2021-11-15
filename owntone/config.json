@@ -27,7 +27,8 @@
     ],
     "general": [{
       "uid": "root",
-      "db_path": "/config/cache/songs3.db"
+      "db_path": "/config/cache/songs3.db",
+      "log_level": "error"
     }]
   },
   "schema": {
